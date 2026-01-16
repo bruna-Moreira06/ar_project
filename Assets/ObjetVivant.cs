@@ -16,6 +16,9 @@ public class ObjetVivant : MonoBehaviour
     private float _targetTimer;
     private float _sautTimer;
     private Transform _nourritureTransform;
+    
+    // Vitesse max randomisée pour ce cube
+    private float _vitesseMax;
 
     bool TryPickTarget(out Vector3 t)
     {
@@ -51,7 +54,7 @@ public class ObjetVivant : MonoBehaviour
         if (distance > configuration.distanceArret)
         {
             rigidbody.AddForce(to.normalized * configuration.acceleration, ForceMode.Acceleration);
-            rigidbody.linearVelocity = Vector3.ClampMagnitude(rigidbody.linearVelocity, configuration.vitesseMax);
+            rigidbody.linearVelocity = Vector3.ClampMagnitude(rigidbody.linearVelocity, _vitesseMax);
         }
         else
         {
@@ -80,6 +83,8 @@ public class ObjetVivant : MonoBehaviour
 
         rigidbody.mass = Mathf.Lerp(configuration.masseRandom.x, configuration.masseRandom.y, random);
         renderer.sharedMaterial = configuration.materiauxRandom[Random.Range(0, configuration.materiauxRandom.Count)];
+        
+        _vitesseMax = Random.Range(configuration.vitesseMaxRandom.x, configuration.vitesseMaxRandom.y);
         
         _sautTimer = Random.Range(configuration.intervalSaut.x, configuration.intervalSaut.y);
     }

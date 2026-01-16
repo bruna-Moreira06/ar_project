@@ -18,7 +18,7 @@ MonoBehaviour:
   tempAttente: {x: 1, y: 3}
   distanceArret: 0.2
   acceleration: 10
-  vitesseMax: 0.5
+  vitesseMaxRandom: {x: 0.3, y: 1}
   intervalSaut: {x: 1, y: 4}
   puissanceSaut: {x: 100, y: 200}
   rayonNourriture: 1

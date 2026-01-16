@@ -16,7 +16,7 @@ public class VivantConfiguration : ScriptableObject
 
     [Header("Vitesses")]
     public float acceleration;
-    public float vitesseMax;
+    public Vector2 vitesseMaxRandom;
 
     [Header("Saut")]
     public Vector2 intervalSaut;
