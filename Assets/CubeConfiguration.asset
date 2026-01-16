@@ -14,13 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::VivantConfiguration
   tailleRandom: {x: 0.3, y: 1.7}
   masseRandom: {x: 0.2, y: 10}
-  rayonMouvement: 0
+  rayonMouvement: {x: 0.1, y: 0.5}
+  tempAttente: {x: 1, y: 3}
+  distanceArret: 0.2
   acceleration: 10
   vitesseMax: 0.5
-  distanceArret: 0
-  tempAttente: {x: 2, y: 5}
-  intervalSaut: {x: 2, y: 5}
+  intervalSaut: {x: 1, y: 4}
   puissanceSaut: {x: 100, y: 200}
+  rayonNourriture: 1
+  distanceConsommation: 0.3
   materiauxRandom:
   - {fileID: 2100000, guid: 83eabfe673263a445972586e5d8b56ee, type: 2}
   - {fileID: 2100000, guid: 18d939936eacf1647b85b90f934b5996, type: 2}
