@@ -23,6 +23,7 @@ MonoBehaviour:
   puissanceSaut: {x: 100, y: 200}
   rayonNourriture: 1
   distanceConsommation: 0.3
+  nourrirGrossissement: 0.1
   materiauxRandom:
   - {fileID: 2100000, guid: 83eabfe673263a445972586e5d8b56ee, type: 2}
   - {fileID: 2100000, guid: 18d939936eacf1647b85b90f934b5996, type: 2}

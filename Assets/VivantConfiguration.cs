@@ -25,6 +25,7 @@ public class VivantConfiguration : ScriptableObject
     [Header("Nourriture")]
     public float rayonNourriture;
     public float distanceConsommation;
+    public float nourrirGrossissement;
 
     public List<Material> materiauxRandom = new();
 }

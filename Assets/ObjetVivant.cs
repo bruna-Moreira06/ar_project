@@ -96,6 +96,10 @@ public class ObjetVivant : MonoBehaviour
             if (distance <= configuration.distanceConsommation)
             {
                 Destroy(_nourritureTransform.parent.gameObject);
+                
+                // Faire grossir légèrement le cube
+                transform.localScale += Vector3.one * configuration.nourrirGrossissement;
+                
                 _nourritureTransform = null;
                 _targetTimer = 0f;
             }
